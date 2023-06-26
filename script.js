@@ -71,7 +71,7 @@ function checkGuess() {
     return;
   }
 
-  var letterColor = ["gray", "gray", "gray", "gray", "gray", "gray"];
+  var letterColor = ["gray", "gray", "gray", "gray", "gray"];
 
   //check green
   for (let i = 0; i < 5; i++) {
@@ -127,7 +127,7 @@ function insertLetter(pressedKey) {
   if (nextLetter === 5) {
     return;
   }
-  pressedKey = pressedKey.toLowerCase();
+  pressedKey = pressedKey.toUpperCase();
 
   let row = document.getElementsByClassName("letter-row")[6 - guessesRemaining];
   let box = row.children[nextLetter];
