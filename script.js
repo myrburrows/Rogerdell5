@@ -26,9 +26,7 @@ console.log(rightGuessString);
   }
   
   function shadeKeyBoard(letter, color) {
-    console.log(letter, color);
     for (const elem of document.getElementsByClassName("keyboard-button")) {
-      console.log(elem)
       if (elem.textContent.toUpperCase() === letter) {
         let oldColor = elem.style.backgroundColor;
         if (oldColor === "green") {
